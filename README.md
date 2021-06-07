@@ -1,19 +1,4 @@
-# project_planner
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+project planner web app with vueJs
+created by my teacher (creative coder online course)
+training with vueJs by Aung Min Oo 
+Thanks for reading
