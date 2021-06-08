@@ -14,7 +14,8 @@
             <span class="material-icons text-success" @click="completeProject">done</span>
           </div>
         </div>
-        <p v-if="showDetail">{{project.detail}} <br> {{project.complete}}</p>
+        <h6 v-if="showDetail" class="fw-bold">詳しい説明</h6>
+        <p v-if="showDetail">{{project.detail}}</p>
         
       </div>
     </div>

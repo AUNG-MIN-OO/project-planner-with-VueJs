@@ -13,7 +13,7 @@
                     <textarea type="text" id="detail" rows="5" class="form-control" v-model="detail"></textarea>
                 </div>
                 <hr>
-                <button class="btn float-end">Add</button>
+                <button class="btn float-end" @click="updateProject">Update</button>
             </form>
         </div>
     </div>
@@ -31,7 +31,6 @@ export default {
     },
     mounted(){
         let apiRoute= this.api+this.id;
-        console.log(apiRoute)
         fetch(apiRoute)
         .then((response)=>{
             return response.json()
@@ -43,6 +42,26 @@ export default {
         .catch((err)=>{
             console.log(err)
         })
+    },
+    methods:{
+        updateProject(){
+            //fetch api from database
+            fetch("http://localhost:3000/projects/"+this.id,{
+                method:"PATCH",
+                headers:{
+                    "Content-type":"application/json"
+                },
+                body:JSON.stringify(
+                    {
+                        title:this.title,
+                        detail:this.detail
+                    }
+                )
+            })
+            .then(()=>{
+                this.$router.push('/')
+            })
+        },
     }
 }
 </script>
