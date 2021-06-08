@@ -7,15 +7,15 @@
       "id": 5
     },
     {
-      "title": "WEB Designer",
+      "title": "WEB Designer 00",
       "detail": "html, Css, Js, Boostrap, jQuery, php, laravel, vueJs",
-      "complete": false,
+      "complete": true,
       "id": 6
     },
     {
       "title": "Javascript Ebook",
-      "detail": "You dont know JavaScript\n",
-      "complete": true,
+      "detail": "lol\n",
+      "complete": false,
       "id": 7
     }
   ]

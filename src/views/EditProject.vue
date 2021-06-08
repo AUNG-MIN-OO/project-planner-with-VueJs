@@ -46,7 +46,7 @@ export default {
     methods:{
         updateProject(){
             //fetch api from database
-            fetch("http://localhost:3000/projects/"+this.id,{
+             fetch("http://localhost:3000/projects/"+this.id,{
                 method:"PATCH",
                 headers:{
                     "Content-type":"application/json"
